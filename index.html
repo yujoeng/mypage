@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="르탄이 - 프로필 링크">
+    <meta property="og:description" content="어서와 코딩은 처음이지?">
+    <meta property="og:image" content="공유할 이미지">
+    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>밈맴뮹 링크타기 - 프로필 링크</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        * {
+            font-family: "Pretendard",serif;
+        }
+
+        body{
+            background-color: #44398a;
+        }
+        .profile {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 100%;
+
+            border: 2px solid white;
+
+            background-image: url('rabbit.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .main {
+            color:white;
+            font-size: 20px;
+
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        
+        .sub {
+            color: white;
+            font-size: 14px;
+
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .wrap {
+            width: 300px;
+            margin: 30px auto 0px auto;
+
+            /* 아래 네 가지는 함께 다니는 친구들이며, */
+            /* flex-direction의 값만 cloumn 인지 low 인지 설정해주면 된다.  */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap > a {
+            width: 300px;
+            height: 50px;
+
+            background-color: white;
+            border-radius: 8px;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+            font-weight: bold;
+            color: #44398a;
+
+            /* 내용물을 가운데로 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            /* 내용물의 밑줄을 없애는 방법 */
+            text-decoration: none;
+
+            /* 그림자 주는 방법 */
+            box-shadow: 3px 3px 5px 0px black;
+        }
+
+        /* 커서를 올릴시, 색상이 바뀔 수 있게 */
+        .wrap > a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class = "profile"></div>
+        <h1 class="main">Myung</h1>
+        <p class="sub">게임 같이 하실래요?</p>
+        <a target="_blank" href="https://www.youtube.com/channel/UCAm5w-ZfN4aTyn9uFCZrETQ/videos">유튜브 구경가기</a>
+        <a target="_blank" href="https://cyphers.nexon.com/cyphers/main">사이퍼즈 공식홈페이지</a>
+        <a target="_blank" href="https://df.nexon.com/df/home">던전앤파이터 공식홈페이지</a>
+        <a target="_blank" href="https://playoverwatch.com/ko-kr/">오버워치 공식홈페이지</a>
+    </div>
+    
+</body>
+</html>
